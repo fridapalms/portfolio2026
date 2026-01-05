@@ -109,11 +109,8 @@ body {
           font-size: 40px;
           color: $font-color-dark;
           margin: 0 0 30px 0;
-          text-decoration-line: underline;
-          text-decoration-color: $accent-color-light;
-          text-decoration-thickness: 3px;
-          text-decoration-style: solid;
-          text-underline-offset: 15px;
+          border-bottom: 3px solid $accent-color-light;
+          padding-bottom: 15px;
         }
 
         .greenbtn {
@@ -157,7 +154,7 @@ body {
         flex-direction: column;
         text-align: start;
         box-sizing: border-box;
-        width: 350px;
+        min-width: 350px;
         background-color: $background-color-dark;
         border: 1px solid $accent-color-light;
         border-radius: 10px;
