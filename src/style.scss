@@ -182,6 +182,8 @@ body {
           font-size: 14px;
           color: $font-color-light;
           padding: 10px 0px;
+          display: inline-block;
+          max-width: 300px;
         }
 
         .lists {
