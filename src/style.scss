@@ -162,6 +162,10 @@ body {
         transition: filter 0.3s ease 0s;
         pointer-events: auto;
 
+        &:hover {
+          filter: drop-shadow(0px 0px 16px $green-accent-color-dark);
+        }
+
         h3 {
           font-weight: 500;
           font-size: 28px;
@@ -201,10 +205,6 @@ body {
               font-style: italic;
             }
           }
-        }
-
-        &:hover {
-          filter: drop-shadow(0px 0px 16px $green-accent-color-dark);
         }
       }
     }
