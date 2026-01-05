@@ -67,7 +67,7 @@ body {
       gap: 5px;
       box-sizing: border-box;
       padding: 40px;
-      background-image: url(/img/radialgradient.png);
+      background-image: url(/2026-portfolio/radialgradient.png);
       background-size: contain;
       background-repeat: no-repeat;
 
@@ -76,7 +76,7 @@ body {
         aspect-ratio: 1;
         --g: /37.02% 37.02% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
         mask: 100% 50% var(--g), 65.451% 97.553% var(--g), 9.549% 79.389% var(--g), 9.549% 20.611% var(--g), 65.451% 2.447% var(--g), radial-gradient(100% 100%, #000 25.476%, #0000 calc(25.476% + 1px));
-        background-image: url(/img/noisegradient.png);
+        background-image: url(/2026-portfolio/noisegradient.png);
         background-size: 1000%;
         background-position: left;
         animation: flower-animation 100s infinite alternate;

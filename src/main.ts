@@ -1,9 +1,9 @@
 import { Project } from "./models/Project";
 import "./style.scss";
 
-const moviefinder: Project = new Project("Movie Finder", "Using OMDB API, search for movies, read about them and add them to your watchlist", "img/moviefinder.png", "https://github.com/fridapalms/movie-finder.git", "https://fridapalms-movie-finder.vercel.app");
-const todolist: Project = new Project("To do-list", "Assignment from JavaScript course at Medieinstitutet, creating a to do-list", "img/todos.png", "https://github.com/fridapalms/the-todos.git", "https://fridapalms.github.io/the-todos/");
-const thirdproject: Project = new Project("Project 3", "Description of project, maximum 2 lines.", "img/placeholder.png", "#", "#");
+const moviefinder: Project = new Project("Movie Finder", "Using OMDB API, search for movies, read about them and add them to your watchlist", "/2026-portfolio/moviefinder.png", "https://github.com/fridapalms/movie-finder.git", "https://fridapalms-movie-finder.vercel.app");
+const todolist: Project = new Project("To do-list", "Assignment from JavaScript course at Medieinstitutet, creating a to do-list", "/2026-portfolio/todos.png", "https://github.com/fridapalms/the-todos.git", "https://fridapalms.github.io/the-todos/");
+const thirdproject: Project = new Project("Project 3", "Description of project, maximum 2 lines.", "/2026-portfolio/placeholder.png", "#", "#");
 
 const projects: Project[] = [moviefinder, todolist, thirdproject];
 
