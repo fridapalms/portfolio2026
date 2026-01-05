@@ -13,6 +13,8 @@ projects.forEach((project) => {
   if (work) {
     //skapa
     const projectcard = document.createElement("div");
+    const infosection = document.createElement("div");
+    const imagesection = document.createElement("div");
     const h4 = document.createElement("h4");
     const info = document.createElement("p");
     const image = document.createElement("img");
@@ -22,6 +24,8 @@ projects.forEach((project) => {
 
     //ändra
     projectcard.className = "project";
+    infosection.className = "infosection";
+    imagesection.className = "imagesection";
     h4.innerHTML = project.headline;
     info.className = "info";
     info.innerHTML = project.info;
@@ -39,10 +43,12 @@ projects.forEach((project) => {
 
     //placera
     work.appendChild(projectcard);
-    projectcard.appendChild(h4);
-    projectcard.appendChild(info);
-    projectcard.appendChild(image);
-    projectcard.appendChild(navigation);
+    projectcard.appendChild(infosection);
+    infosection.appendChild(h4);
+    infosection.appendChild(info);
+    projectcard.appendChild(imagesection);
+    imagesection.appendChild(image);
+    imagesection.appendChild(navigation);
     navigation.appendChild(button1);
     navigation.appendChild(button2);
   }

@@ -256,59 +256,72 @@ body {
       .project {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        justify-content: space-between;
         background-color: $background-color-light;
         border-radius: 10px;
         border: 1px solid $accent-color-light;
         padding: 30px;
-        width: 70%;
+        width: 360px;
+        height: 580px;
         box-sizing: border-box;
         transition: all 0.3s ease 0s;
 
-        h4 {
-          font-size: 26px;
-          color: $font-color-dark;
-          margin: 0px;
-          text-decoration-line: underline;
-          text-decoration-color: $pink-accent-color-dark;
-          text-decoration-thickness: 3px;
-          text-decoration-style: solid;
-          text-underline-offset: 15px;
-        }
-
-        .info {
-          font-size: 16px;
-          color: $font-color-dark;
-          margin: 0px;
-        }
-
-        .project-img {
-          width: 100%;
-          border-radius: 10px;
-        }
-
-        .project-nav {
+        .infosection {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
+          flex-direction: column;
+          gap: 30px;
 
-          .pinkbtn {
-            background-color: transparent;
-            border: 3px solid $pink-accent-color-dark;
-            border-radius: 25px;
-            color: $pink-accent-color-dark;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 600;
-            padding: 10px;
-            width: 120px;
-            font-size: 14px;
-            transition: all 0.3s ease 0s;
+          h4 {
+            font-size: 26px;
+            color: $font-color-dark;
+            margin: 0px;
+            text-decoration-line: underline;
+            text-decoration-color: $pink-accent-color-dark;
+            text-decoration-thickness: 3px;
+            text-decoration-style: solid;
+            text-underline-offset: 15px;
+          }
 
-            &:hover {
-              border: 3px solid $pink-accent-color-light;
-              color: $pink-accent-color-light;
+          .info {
+            font-size: 16px;
+            color: $font-color-dark;
+            margin: 0px;
+          }
+        }
+
+        .imagesection {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          .project-img {
+            width: 100%;
+            border-radius: 10px;
+          }
+
+          .project-nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .pinkbtn {
+              background-color: transparent;
+              border: 3px solid $pink-accent-color-dark;
+              border-radius: 25px;
+              color: $pink-accent-color-dark;
+              text-decoration: none;
+              text-align: center;
+              font-weight: 600;
+              padding: 10px;
+              width: 120px;
+              font-size: 14px;
+              transition: all 0.3s ease 0s;
+
+              &:hover {
+                border: 3px solid $pink-accent-color-light;
+                color: $pink-accent-color-light;
+              }
             }
           }
         }
