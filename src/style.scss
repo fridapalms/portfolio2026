@@ -159,7 +159,8 @@ body {
         border: 1px solid $accent-color-light;
         border-radius: 10px;
         padding: 40px;
-        transition: all 0.3s ease 0s;
+        transition: filter 0.3s ease 0s;
+        pointer-events: auto;
 
         h3 {
           font-weight: 500;
