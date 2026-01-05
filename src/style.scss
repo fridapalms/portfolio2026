@@ -1,0 +1,312 @@
+@use "variables" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color-light;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  #app {
+    background-color: $background-color-light;
+    width: 96vw;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 10px;
+      box-sizing: border-box;
+
+      .navtext {
+        color: $font-color-dark;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      hr {
+        width: 100%;
+        border: 0.5px solid $accent-color-light;
+      }
+
+      .navlink {
+        text-decoration: none;
+        color: $font-color-dark;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        padding: 10px;
+        transition: all 0.3s ease 0s;
+
+        &:visited {
+          color: $font-color-dark;
+        }
+
+        &:hover {
+          color: $accent-color-light;
+          border: 1px solid $accent-color-light;
+          border-radius: 25px;
+          padding: 10px;
+        }
+      }
+    }
+
+    .hero {
+      min-height: 600px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 5px;
+      box-sizing: border-box;
+      padding: 40px;
+      background-image: url(/img/radialgradient.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      .flower {
+        width: 300px;
+        aspect-ratio: 1;
+        --g: /37.02% 37.02% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
+        mask: 100% 50% var(--g), 65.451% 97.553% var(--g), 9.549% 79.389% var(--g), 9.549% 20.611% var(--g), 65.451% 2.447% var(--g), radial-gradient(100% 100%, #000 25.476%, #0000 calc(25.476% + 1px));
+        background-image: url(/img/noisegradient.png);
+        background-size: 1000%;
+        background-position: left;
+        animation: flower-animation 100s infinite alternate;
+      }
+
+      @keyframes flower-animation {
+        0% {
+          background-position: left;
+        }
+        100% {
+          background-position: right;
+        }
+      }
+
+      .herotext {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+
+        h1 {
+          font-weight: 600;
+          font-size: 40px;
+          color: $font-color-dark;
+          padding-top: 20px;
+          margin: 0;
+        }
+
+        h2 {
+          font-weight: 600;
+          font-size: 40px;
+          color: $font-color-dark;
+          margin: 0 0 30px 0;
+          text-decoration: underline 3px solid $accent-color-light;
+          text-underline-offset: 15px;
+        }
+
+        .greenbtn {
+          background-color: transparent;
+          border: 1px solid $green-accent-color-light;
+          border-radius: 25px;
+          color: $green-accent-color-light;
+          text-decoration: none;
+          text-align: center;
+          font-weight: 400;
+          padding: 10px;
+          margin: 0px 0px 60px 0px;
+          width: 150px;
+          transition: all 0.3s ease 0s;
+
+          &:hover {
+            border: 1px solid $green-accent-color-dark;
+            color: $green-accent-color-dark;
+          }
+        }
+      }
+    }
+
+    .about {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      min-height: 600px;
+      box-sizing: border-box;
+      padding: 80px;
+      background-color: $background-color-dark;
+      border-radius: 10px;
+
+      .aboutme,
+      .education,
+      .skills {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        box-sizing: border-box;
+        width: 350px;
+        background-color: $background-color-dark;
+        border: 1px solid $accent-color-light;
+        border-radius: 10px;
+        padding: 40px;
+        transition: all 0.3s ease 0s;
+
+        h3 {
+          font-weight: 500;
+          font-size: 28px;
+          color: $font-color-light;
+          text-decoration: underline 3px solid $green-accent-color-light;
+          text-underline-offset: 15px;
+        }
+
+        .me {
+          font-weight: 400;
+          font-size: 14px;
+          color: $font-color-light;
+          padding: 10px 0px;
+        }
+
+        .lists {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        ul {
+          font-weight: 400;
+          font-size: 14px;
+          color: $font-color-light;
+          list-style: none;
+          padding-left: 0;
+          text-align: start;
+          min-width: 120px;
+
+          li {
+            padding: 10px 0px;
+
+            span {
+              font-weight: 100;
+              font-style: italic;
+            }
+          }
+        }
+
+        &:hover {
+          filter: drop-shadow(0px 0px 16px $green-accent-color-dark);
+        }
+      }
+    }
+
+    .work {
+      box-sizing: border-box;
+      padding: 30px 0px;
+
+      .workheader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+
+        hr {
+          width: 100%;
+          border: 0.5px solid $accent-color-light;
+        }
+
+        .worktext {
+          color: $font-color-dark;
+          font-weight: 400;
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+
+      #workprojects {
+        background-color: $background-color-light;
+        min-height: 700px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+
+      .project {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: $background-color-light;
+        border-radius: 10px;
+        border: 1px solid $accent-color-light;
+        padding: 30px;
+        width: 70%;
+        box-sizing: border-box;
+        transition: all 0.3s ease 0s;
+
+        h4 {
+          font-size: 26px;
+          color: $font-color-dark;
+          margin: 0px;
+          text-decoration: underline 3px solid $pink-accent-color-dark;
+          text-underline-offset: 15px;
+        }
+
+        .info {
+          font-size: 16px;
+          color: $font-color-dark;
+          margin: 0px;
+        }
+
+        .project-img {
+          width: 100%;
+          border-radius: 10px;
+        }
+
+        .project-nav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          .pinkbtn {
+            background-color: transparent;
+            border: 3px solid $pink-accent-color-dark;
+            border-radius: 25px;
+            color: $pink-accent-color-dark;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            padding: 10px;
+            width: 120px;
+            font-size: 14px;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+              border: 3px solid $pink-accent-color-light;
+              color: $pink-accent-color-light;
+            }
+          }
+        }
+
+        &:hover {
+          filter: drop-shadow(0px 0px 16px $accent-color-light);
+        }
+      }
+    }
+  }
+}
