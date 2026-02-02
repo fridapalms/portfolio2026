@@ -3,7 +3,7 @@ import "./style.scss";
 
 const moviefinder: Project = new Project("Movie Finder", "Using OMDB API, search for movies, read about them and add them to your watchlist", "/moviefinder.png", "https://github.com/fridapalms/movie-finder.git", "https://fridapalms-movie-finder.vercel.app");
 const todolist: Project = new Project("To do-list", "Assignment from JavaScript course at Medieinstitutet, creating a to do-list", "/todolist.png", "https://github.com/fridapalms/the-todos.git", "https://fridapalms.github.io/the-todos/");
-const thirdproject: Project = new Project("Project 3", "Description of project, maximum 2 lines.", "/placeholder.png", "#", "#");
+const thirdproject: Project = new Project("Coffeeshop", "Group project from JavaScript course at Medieinstitutet, creating a webshop", "/coffeeshop.png", "https://github.com/fridapalms/coffee-webshop.git", "https://fridapalms-coffeeshop.vercel.app/");
 
 const projects: Project[] = [moviefinder, todolist, thirdproject];
 
