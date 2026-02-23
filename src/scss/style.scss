@@ -172,7 +172,8 @@ body {
         flex-direction: column;
         text-align: start;
         box-sizing: border-box;
-        min-width: 350px;
+        width: 350px;
+        height: 400px;
         background-color: $background-color-dark;
         border: 1px solid $accent-color-light;
         border-radius: 10px;
@@ -218,14 +219,74 @@ body {
           list-style: none;
           padding-left: 0;
           text-align: start;
-          min-width: 120px;
+          min-width: 70px;
 
           li {
             padding: 10px 0px;
+            line-height: 130%;
 
             span {
               font-weight: 100;
               font-style: italic;
+              font-weight: lighter;
+            }
+          }
+
+          .skill-li {
+            padding: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            justify-content: center;
+            align-items: center;
+
+            .skill-icon {
+              width: 25px;
+              transition: filter 0.3s ease 0s;
+              pointer-events: auto;
+
+              &:hover {
+                filter: drop-shadow(0px 0px 16px $green-accent-color-dark);
+              }
+            }
+          }
+        }
+
+        .social-ul {
+          font-weight: 400;
+          font-size: 14px;
+          color: $font-color-light;
+          list-style: none;
+          padding-left: 0;
+          text-align: start;
+          min-width: 70px;
+          display: flex;
+          flex-direction: row;
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+
+          a {
+            text-decoration: none;
+            color: $font-color-light;
+
+            .social-li {
+              padding: 4px 0px;
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              justify-content: center;
+              align-items: center;
+
+              .social-icon {
+                width: 25px;
+                transition: filter 0.3s ease 0s;
+                pointer-events: auto;
+
+                &:hover {
+                  filter: drop-shadow(0px 0px 16px $green-accent-color-dark);
+                }
+              }
             }
           }
         }
